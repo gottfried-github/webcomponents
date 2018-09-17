@@ -1,0 +1,49 @@
+<style>:host {
+    display: flex;
+  }
+
+  .category-info, .featured-work-slot-container {
+    flex-grow: 1;
+    min-width: 50%;
+  }
+
+  .category-info {
+    background-color: grey;
+  }
+
+  .featured-work-slot-container {
+    background-color: green;
+  }
+
+  .category-info h1 {
+    font-family: var(--font-family-h);
+    font-weight: var(--font-weight-h);
+  }
+
+  .category-info p {
+    font-family: var(--font-family-p);
+    font-weight: var(--font-weight-p);
+  }
+
+  /*
+  .featured-work-slot-container {
+    display: flex;
+    flex-direction: column;
+  }
+  */
+
+  @media (max-width: 1500px) {
+    :host {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 1501px) {
+    .category-info, .featured-work-slot-container {
+      min-width: 50%;
+
+      /*
+      flex-grow: 1;
+      */
+    }
+  }</style><div class="category-info"><h1 class="title"></h1><p class="description"></p></div><div class="featured-work-slot-container"><slot name="featured-work"></slot></div>
