@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    front: './src/front/front.js'
+    index: './src/index/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),

@@ -1,11 +1,16 @@
 {
-  "name": "gixmediacrew-frontend",
+  "name": "webcomponentsPlayground",
   "version": "0.0.1",
-  "main": "dist/front.js",
+  "main": "src/index.js",
   "repository": "/",
   "author": "spti <dannvx@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build-components": "gulp components:markup-minify && gulp components:markup-inject",
+    "build-scripts": "webpack --config webpack.config.js && gulp src:build",
+    "build": "yarn build-components && yarn build-scripts"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.1",
     "@babel/preset-env": "^7.0.0",
@@ -20,5 +25,6 @@
   },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.1.2"
-  }
+  },
+  "description": "try out web components"
 }
