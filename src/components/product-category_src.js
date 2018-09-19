@@ -15,14 +15,14 @@ class ProductCategory extends HTMLElement {
 
     const shadowRoot = this.attachShadow({mode: 'open'})
     shadowRoot.innerHTML = templateStr;
-    if (!catInfo)
-      return this
+    //if (!catInfo)
+    //  return this
 
-    const h = shadowRoot.querySelector('div h1')
-    h.innerText = catInfo.name || ''
+    //const h = shadowRoot.querySelector('div h1')
+    //h.innerText = catInfo.name || ''
 
-    const p = shadowRoot.querySelector('div p')
-    p.innerText = catInfo.description || ''
+    //const p = shadowRoot.querySelector('div p')
+    //p.innerText = catInfo.description || ''
   }
 }
 
