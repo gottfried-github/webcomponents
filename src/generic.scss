@@ -35,15 +35,17 @@
 }
 
 html {
+  /*
   --font-family-h: NunitoSans;
   --font-weight-h: 800;
 
   --font-family-p: NunitoSans;
   --font-weight-p: normal;
+
+  */
 }
 
-.feat-work-placeholder {
-  width: 150px;
-  height: 150px;
-  background-color: grey;
+body {
+  font-family: NunitoSans;
+  background-color: rgba(192, 192, 192, 0.5)
 }

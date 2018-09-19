@@ -24,14 +24,18 @@ gulp.task('src:copy', () => {
 
 gulp.task('src:sass', () => {
   return gulp.src([
-    './src/*.scss',
-    './src/**/*.scss',
+    // './src/*.scss',
+    './src/!(components|*.scss)**/*.scss',
   ])
   .pipe(sass())
+  .pipe(rename(filePath => {
+    // console.log(filePath)
+    filePath.dirname = path.parse(filePath.dirname).dir
+  }))
   .pipe(gulp.dest(distDir))
 })
 
-
+gulp.task('src:build', ['src:copy', 'src:sass'])
 /**
   @desc
   @name COMPONENTS related tasks

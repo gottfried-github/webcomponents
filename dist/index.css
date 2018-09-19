@@ -1,0 +1,70 @@
+@font-face {
+  font-family: NunitoSans;
+  src: url(fonts/NunitoSans-Black.ttf);
+  font-weight: 900; }
+
+@font-face {
+  font-family: NunitoSans;
+  src: url(fonts/NunitoSans-ExtraBold.ttf);
+  font-weight: 800; }
+
+@font-face {
+  font-family: NunitoSans;
+  src: url(fonts/NunitoSans-Bold.ttf);
+  font-weight: bold; }
+
+@font-face {
+  font-family: NunitoSans;
+  src: url(fonts/NunitoSans-Regular.ttf);
+  font-weight: normal; }
+
+@font-face {
+  font-family: NunitoSans;
+  src: url(fonts/NunitoSans-Light.ttf);
+  font-weight: 300; }
+
+@font-face {
+  font-family: NunitoSans;
+  src: url(fonts/NunitoSans-ExtraLight.ttf);
+  font-weight: 200; }
+
+html {
+  /*
+  --font-family-h: NunitoSans;
+  --font-weight-h: 800;
+
+  --font-family-p: NunitoSans;
+  --font-weight-p: normal;
+
+  */ }
+
+body {
+  font-family: NunitoSans;
+  background-color: rgba(192, 192, 192, 0.5); }
+
+product-category .info {
+  position: relative;
+  /*
+  padding prevents inner content's margins from affecting this element's position in the flow
+  */
+  padding: 1px; }
+
+product-category .info h1 {
+  font-weight: 800; }
+
+product-category .info p {
+  font-weight: normal; }
+
+.feat-work_container {
+  width: 100%; }
+
+product-category:nth-child(even) .info {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white); }
+
+product-category:nth-child(odd) .feat-work_container {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white); }
+
+.feat-work {
+  width: 150px;
+  height: 150px;
+  background-color: grey; }

@@ -1,0 +1,37 @@
+@import '../generic.scss';
+
+$gradient: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+
+product-category .info {
+  position: relative;
+  /*
+  padding prevents inner content's margins from affecting this element's position in the flow
+  */
+  padding: 1px;
+}
+
+product-category .info h1 {
+  font-weight: 800;
+}
+
+product-category .info p {
+  font-weight: normal;
+}
+
+.feat-work_container {
+  width: 100%;
+}
+
+product-category:nth-child(even) .info {
+  background: $gradient;
+}
+
+product-category:nth-child(odd) .feat-work_container {
+  background: $gradient;
+}
+
+.feat-work {
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+}
